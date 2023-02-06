@@ -1,2 +1,38 @@
-h1 {
+div h2 {
+  font: italic;
+}
+
+h2 + p {
+  color: red;
+}
+
+.list > li {
+  list-style: none; /* 불릿 기호 없애기 */
+  border-bottom: 1px solid grey;
+}
+
+li > a:link {
+  color: green;
+}
+
+li > a:visited {
+  color: red;
+}
+
+li > a:hover {
+  color: pink;
+}
+
+li:first-child::first-letter {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+a[title="BCIT homepage"] {
+  background-color: yellow;
+}
+
+a[title="admission"]::first-letter {
+  font-weight: bold;
+  font-size: 120%;
 }
